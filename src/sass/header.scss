@@ -1,0 +1,173 @@
+.homeParent {
+    background-color: #F2F0F1;
+    color: #ddd;
+    width: 100%;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.row {
+    margin: 0;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    color: #000000;
+}
+
+.shopBtn {
+    background-color: #000 !important;
+    color: #FFFFFF !important;
+    margin-top: 32px;
+    width: 210px;
+    height: 52px;
+    border-radius: 62px !important;
+    padding: 16px 54px;
+}
+
+.main-section {
+    margin-top: 103px;
+}
+
+.main-section .main-title {
+    font-family: "Integral CF Bold";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: left;
+    color: #000000;
+    width: 100%;
+}
+
+.main-section p {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 32px;
+    color: #00000099;
+}
+
+.followers {
+    margin-top: 48px;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.plus {
+    color: #000;
+}
+
+.border-container {
+    border-left: 1px solid #0000001A;
+    border-right: 1px solid #0000001A;
+    padding: 0 10px;
+}
+
+.column-content {
+    font-size: 40px;
+    line-height: 54px;
+    font-weight: 700;
+}
+
+.interBrands,
+.hqProducts,
+.customers {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #00000099;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+}
+
+.vector1 {
+    position: absolute;
+    top: 297px;
+    opacity: 1;
+}
+
+.vector2 {
+    position: absolute;
+    top: 220px;
+    opacity: 1;
+}
+
+.recImage {
+    margin-top: 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-section {
+        margin-top: 40px;
+    }
+
+    .main-section .main-title {
+        font-size: 36px;
+        line-height: 34px;
+    }
+
+    .main-section p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    .shopBtn {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .followers {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .border-container {
+        border-right: 0;
+    }
+
+    .column-content {
+        font-size: 24px;
+        line-height: 32.4px;
+    }
+
+    .interBrands,
+    .hqProducts,
+    .customers {
+        font-size: 12px;
+    }
+
+    .vector1 {
+        position: absolute;
+        top: 173px;
+        opacity: 1;
+        width: 44px;
+    }
+
+    .vector2 {
+        position: absolute;
+        top: 40px;
+        opacity: 1;
+        width: 76px;
+        right: 21px;
+    }
+
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1480px) {
+    .vector2 {
+        position: absolute;
+        top: 40px;
+        opacity: 1;
+        width: 76px;
+        right: 30px;
+    }
+
+}

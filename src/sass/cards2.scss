@@ -1,0 +1,52 @@
+
+
+//! start cards2 
+
+.arrivals2 {
+    width: 100%;
+    font-family: "Integral CF Bold", sans-serif;
+    height: 58px;
+    color: #000000;
+    margin-top: 72px;
+    margin-bottom: 55px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: center;
+}
+
+.border-wrapper {
+    width: 1240px;
+    margin: 64px auto 20px;
+    border-top: 1px solid #0000001A;
+    padding-bottom: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .border-wrapper {
+        width: 358px;
+        margin: 32px auto 15px;
+        padding-bottom: 15px;
+    }
+}
+
+/* Media query for very small devices */
+@media (max-width: 480px) {
+    .border-wrapper {
+        width: 100%;
+        margin: 24px auto 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .border-wrapper {
+        width: 100%;
+        margin: 32px auto 15px;
+        padding-bottom: 15px;
+    }
+}
+
+//! end cards2 ******
+

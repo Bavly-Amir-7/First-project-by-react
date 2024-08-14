@@ -1,0 +1,66 @@
+
+//! Start Brands *************************
+
+.brands {
+    width: 100%;
+    height: 122px;
+    background: #000000;
+}
+
+.imagesContainer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+
+}
+
+//!? /* Responsive Styles */
+
+@media (max-width: 768px) {
+    .brands {
+        width: 100%;
+        height: 146px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagesContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-evenly;
+
+    }
+
+    .imagesContainer img:nth-child(1) {
+        width: 116.74px;
+        height: 23.25px;
+    }
+
+    .imagesContainer img:nth-child(2) {
+        width: 63.81px;
+        height: 26.65px;
+    }
+
+    .imagesContainer img:nth-child(3) {
+        width: 109.39px;
+        height: 25.24px;
+    }
+
+    .imagesContainer img:nth-child(4) {
+        width: 127px;
+        height: 21px;
+    }
+
+    .imagesContainer img:nth-child(5) {
+        width: 134.84px;
+        height: 21.75px;
+    }
+}
+
+//! end Brands *************************

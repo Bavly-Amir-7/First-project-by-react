@@ -1,0 +1,123 @@
+
+//! customers cards ********* 
+
+.carouselParent{
+    padding-bottom: 80px;
+}
+
+.happyCustomersTitle {
+    font-family: "Integral CF Bold";
+    font-size: 32px;
+    line-height: 36px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.title-and-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title-and-buttons,
+button {
+    background-color: transparent !important;
+    color: #000000 !important;
+}
+
+.button-container {
+    display: flex;
+}
+
+.nameTitle {
+    color: red($color: #000000);
+}
+
+.carousel-control {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    z-index: 10;
+    margin: 0;
+}
+
+.prev {
+    margin-right: 8px;
+}
+
+.next {
+    margin-left: 8px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.custom-card1 {
+    width: 400px !important;
+    height: 239.58px !important;
+    margin: 0 10px !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 20px !important;
+    padding: 28px 32px !important;
+}
+
+.stars i {
+    color: #FFC633;
+    font-size: 22.58px;
+    margin-right: 2px;
+}
+
+.subtitle-icon {
+    width: 19.5px;
+    height: 19.5px;
+    margin-right: 8px;
+    vertical-align: middle;
+    padding-left: 6.25px;
+}
+
+@media (max-width: 768px) {
+    .happyCustomersTitle {
+        font-family: "Integral CF Bold";
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 40px;
+        width: 286px;
+        height: 72px;
+    }
+
+    .custom-card1 {
+        width: 358px !important;
+        height: (186.19px) !important;
+        margin: 0 10px !important;
+        border: 1px solid rgba(0, 0, 0, 0.1) !important;
+        border-radius: 20px !important;
+        margin-top: 24px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 98px;
+    }
+
+
+}
+
+//! customers cards ********* 
