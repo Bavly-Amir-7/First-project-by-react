@@ -24,15 +24,15 @@ function Products() {
   //     console.log("deleted")
   //   }, []
   // })
-  
+
   const click = () => {
     console.log("B")
   }
-  
+
   return (
-<>
-< Cards />
-</>
+    <>
+      < Cards />
+    </>
   )
 
 }
