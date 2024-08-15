@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import shopTitle from "../src/images/SHOP.CO.png"
 
 function CustomNav() {
   return (
@@ -11,7 +12,7 @@ function CustomNav() {
         <Container>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Link to="/">
-            <img className='webTitle' src="src/images/SHOP.CO.png" alt="Site title" />
+            <img className='webTitle' src={shopTitle} alt="Site title" />
           </Link>
           <div className='navStyle d-flex'>
             <Navbar.Collapse className='nav-styles' id="navbarScroll">
