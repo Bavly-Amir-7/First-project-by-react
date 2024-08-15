@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from 'react-bootstrap';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import right from "../images/ture.png"
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
@@ -87,7 +88,7 @@ const Carousel = () => {
                                         </Card.Title>
                                         <Card.Subtitle className="mb-2 text-muted nameTitle">
                                             {subtitles[index % subtitles.length]}
-                                            <img src="src/images/ture.png" alt="Icon" className="subtitle-icon" />
+                                            <img src={right} alt="Icon" className="subtitle-icon" />
                                         </Card.Subtitle>
                                         <Card.Text>
                                             Some quick example text to build on the card title and make up the
@@ -111,7 +112,7 @@ const Carousel = () => {
                                         </Card.Title>
                                         <Card.Subtitle className="mb-2 text-muted">
                                             {subtitles[index % subtitles.length]}
-                                            <img src="src/images/ture.png" alt="Icon" className="subtitle-icon" />
+                                            <img src={right} alt="Icon" className="subtitle-icon" />
                                         </Card.Subtitle>
                                         <Card.Text>
                                             Some quick example text to build on the card title and make up the
