@@ -1,7 +1,11 @@
 import React from 'react'
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
-
+import visa from "../src/images/payments/Visa.png"
+import masterCard from "../src/images/payments/Mastercard.png"
+import paybal from "../src/images/payments/Paypal.png"
+import apple from "../src/images/payments/ Pay.png"
+import gPay from "../src/images/payments/G Pay.png"
 
 export default function Footer() {
     return (
@@ -170,28 +174,28 @@ export default function Footer() {
 
                             <div className='payment'>
                                 <a href='#' className=' text-reset'>
-                                    <img src="src/images/payments/Visa.png" alt="payments" />
+                                    <img src={visa} alt="payments" />
                                 </a>
                             </div>
 
                             <div className='payment'>
                                 <a href='#' className=' text-reset '>
-                                    <img src="src/images/payments/MasterCard.png" alt="payments" />
+                                    <img src={masterCard} alt="payments" />
                                 </a>
                             </div>
                             <div className='payment'>
                                 <a href='#' className=' text-reset '>
-                                    <img src="src/images/payments/Paypal.png" alt="payments" />
+                                    <img src={paybal} alt="payments" />
                                 </a>
                             </div>
                             <div className='payment'>
                                 <a href='#' className=' text-reset '>
-                                    <img src="src/images/payments/ Pay.png" alt="payments" />
+                                    <img src={apple} alt="payments" />
                                 </a>
                             </div>
                             <div className='payment'>
                                 <a href='#' className=' text-reset '>
-                                    <img src="src/images/payments/G Pay.png" alt="payments" />
+                                    <img src={gPay} alt="payments" />
                                 </a>
 
 

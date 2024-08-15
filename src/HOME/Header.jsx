@@ -1,6 +1,10 @@
 import React from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure you have imported Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import vector1 from "../images/Vector.png"
+import mainSec from "../images/main-sec.png"
+import vector2 from "../images/Vector2.png"
+
 
 export default function Header() {
   return (
@@ -28,9 +32,9 @@ export default function Header() {
             </Row>
           </Col>
           <Col md={6} sm={12} className="images">
-            <img src="src/images/Vector.png" className='vector1' alt="star" />
-            <img src="src/images/main-sec.png"  className="recImage w-100"/>
-            <img src="src/images/Vector2.png" className='vector2' alt="star" />
+            <img src={vector1} className='vector1' alt="star" />
+            <img src={mainSec} className="recImage w-100"/>
+            <img src={vector2} className='vector2' alt="star" />
           </Col>
         </Row>
       </div>
