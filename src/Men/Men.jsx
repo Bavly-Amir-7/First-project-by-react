@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import t1 from "../images/men/image 2.png";
 import t2 from "../images/men/image 5.png";
 import t3 from "../images/men/image 6.png";
-import right from "../images/ture.png"
+import right from "../images/ture.png";
 
 export default function Men() {
   const [count, setCount] = useState(0);
@@ -124,55 +124,42 @@ export default function Men() {
           <div className='reviews w-100 d-flex'>
             <div className='allReviews'>All Reviews <span>(451)</span></div>
 
-
             <div className='settings d-flex'>
-
               <div className='slider'>
                 <i className="fa-solid fa-sliders"></i>
               </div>
 
-              <div className='latest d-flex'>Latest <i class="fa-solid fa-chevron-down"></i></div>
+              <div className='latest d-flex'>Latest <i className="fa-solid fa-chevron-down"></i></div>
 
               <div className='write'>
                 <button>Write a Review</button>
               </div>
-
             </div>
           </div>
 
-
-
-
-
           {/* ******** cards ********** */}
-
 
           <div className="cardsParent">
             <Row>
               <Col md={6} sm={12}>
                 <div className="card p-3 mb-4">
                   <div className="starsArea d-flex w-100">
-
-                    <div className=' d-flex'>
+                    <div className='d-flex'>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star-half"></i>
-
                     </div>
-
                     <div>
-                      <i class="fa-solid fa-ellipsis"></i>
+                      <i className="fa-solid fa-ellipsis"></i>
                     </div>
                   </div>
-
 
                   <div className="d-flex align-items-center">
-                    <strong>Samantha D.                <img src={right} alt="Icon" className="subtitle-icon" />
-                    </strong>
+                    <strong>Samantha D. <img src={right} alt="Icon" className="subtitle-icon" /></strong>
                   </div>
-                  <p>""I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+                  <p>"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
                   <small>Posted on August 14, 2023</small>
                 </div>
               </Col>
@@ -180,20 +167,18 @@ export default function Men() {
               <Col md={6} sm={12}>
                 <div className="card p-3 mb-4">
                   <div className="starsArea d-flex w-100">
-
-                    <div className=' d-flex'>
+                    <div className='d-flex'>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                     </div>
-
                     <div>
-                      <i class="fa-solid fa-ellipsis"></i>
+                      <i className="fa-solid fa-ellipsis"></i>
                     </div>
                   </div>
                   <div className="d-flex align-items-center">
-                    <strong>Alex M.    <img src={right} alt="Icon" className="subtitle-icon" /></strong>
+                    <strong>Alex M. <img src={right} alt="Icon" className="subtitle-icon" /></strong>
                   </div>
                   <p>"The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."</p>
                   <small>Posted on August 15, 2023</small>
@@ -203,23 +188,21 @@ export default function Men() {
               <Col md={6} sm={12}>
                 <div className="card p-3 mb-4">
                   <div className="starsArea d-flex w-100">
-
-                    <div className=' d-flex'>
+                    <div className='d-flex'>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                     </div>
-
                     <div>
-                      <i class="fa-solid fa-ellipsis"></i>
+                      <i className="fa-solid fa-ellipsis"></i>
                     </div>
                   </div>
                   <div className="d-flex align-items-center">
-                    <strong>Ethan R.    <img src={right} alt="Icon" className="subtitle-icon" /></strong>
+                    <strong>Ethan R. <img src={right} alt="Icon" className="subtitle-icon" /></strong>
                   </div>
-                  <p>"This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."</p>
+                  <p>"This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every detail."</p>
                   <small>Posted on August 16, 2023</small>
                 </div>
               </Col>
@@ -227,72 +210,23 @@ export default function Men() {
               <Col md={6} sm={12}>
                 <div className="card p-3 mb-4">
                   <div className="starsArea d-flex w-100">
-
-                    <div className=' d-flex'>
+                    <div className='d-flex'>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star-half"></i>
                     </div>
-
                     <div>
-                      <i class="fa-solid fa-ellipsis"></i>
+                      <i className="fa-solid fa-ellipsis"></i>
                     </div>
                   </div>
                   <div className="d-flex align-items-center">
-                    <strong>John K.    <img src={right} alt="Icon" className="subtitle-icon" /></strong>
+                    <strong>Olivia J. <img src={right} alt="Icon" className="subtitle-icon" /></strong>
                   </div>
-                  <p>"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."</p>
+                  <p>"A fantastic t-shirt with a great design. The quality is excellent, and the fit is just right. I've received numerous compliments on it. As a designer, I appreciate the thoughtful details."</p>
                   <small>Posted on August 17, 2023</small>
                 </div>
               </Col>
-
-              <Col md={6} sm={12}>
-                <div className="card p-3 mb-4">
-                  <div className="starsArea d-flex w-100">
-
-                    <div className=' d-flex'>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                    </div>
-
-                    <div>
-                      <i class="fa-solid fa-ellipsis"></i>
-                    </div>
-                  </div>
-                  <div className="d-flex align-items-center">
-                    <strong>Emma L.    <img src={right} alt="Icon" className="subtitle-icon" /></strong>
-                  </div>
-                  <p>"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."</p>
-                  <small>Posted on August 18, 2023</small>
-                </div>
-              </Col>
-              <Col md={6} sm={12}>
-                <div className="card p-3 mb-4">
-                  <div className="starsArea d-flex w-100">
-
-                    <div className=' d-flex'>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                    </div>
-
-                    <div>
-                      <i class="fa-solid fa-ellipsis"></i>
-                    </div>
-                  </div>
-                  <div className="d-flex align-items-center">
-                    <strong>Ava H.    <img src={right} alt="Icon" className="subtitle-icon" /></strong>
-                  </div>
-                  <p>"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."</p>
-                  <small>Posted on August 18, 2023</small>
-                </div>
-              </Col>
-
-
             </Row>
           </div>
         </div>
