@@ -12,6 +12,8 @@ import ErrorPage from './test/ErrorPage';
 import Header from './HOME/Header';
 import Footer from './Footer';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import Men from './Men/Men';
+
 
 
 
@@ -26,6 +28,7 @@ function App() {
           <Route path="/brands" element={<Cards />} />
           <Route path="/cards" element={<Cards />} />
           <Route path="/*" element={<ErrorPage />} />
+          <Route path="men" element={<Men />} />
         </Routes>
         <Footer/>
     </>

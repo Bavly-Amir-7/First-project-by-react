@@ -6,7 +6,7 @@ export default function ErrorPage() {
     <>
       <style jsx global>{`
       body {
-        background-color: black;
+        background-color: #444242;
       }
     `}</style>
 

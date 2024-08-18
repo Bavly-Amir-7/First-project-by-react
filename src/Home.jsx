@@ -6,6 +6,7 @@ import Brands from './HOME/Brands';
 import NewArrivals from './HOME/NewArrivals';
 import TopSelling from './HOME/TopSelling';
 import DressStyles from './HOME/DressStyles';
+import Men from './Men/Men';
 
 function Home() {
   return (
@@ -33,11 +34,10 @@ function Home() {
       </div>
 
 
-
-
       <div>
         <Carousel />
       </div>
+
 
     </>
   );

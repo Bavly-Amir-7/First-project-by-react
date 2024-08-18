@@ -18,7 +18,7 @@ function CustomNav() {
             <Navbar.Collapse className='nav-styles' id="navbarScroll">
               <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
                 <NavDropdown title="shop" id="navbarScrollingDropdown">
-                  <NavDropdown.Item as={Link} to="/somepage">Action</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/men">Men</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/anotherpage">
                     Another action
                   </NavDropdown.Item>
