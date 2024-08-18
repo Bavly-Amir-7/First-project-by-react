@@ -256,3 +256,124 @@
     background-color: gold !important;
     color: #000000 !important;
 }
+
+// *****************************************************
+
+.details {
+    margin-top: 80px;
+    justify-content: space-around;
+}
+
+.productDetails {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #00000099;
+    border-bottom: 1px solid #0000001A;
+    width: 100%;
+    padding-bottom: 24px;
+
+}
+
+.rate {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    width: 100%;
+}
+
+// ************************************************
+
+.reviews {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    justify-content: space-between;
+}
+
+.allReviews {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.4px;
+    color: #000000;
+}
+
+.allReviews span {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #00000099;
+}
+
+.settings {
+    gap: 10px;
+}
+
+.slider {
+    background: #F0F0F0;
+    width: 48px;
+    height: 48px;
+    border-radius: 62px;
+    align-content: center;
+    text-align: center;
+}
+
+.latest {
+    background: #F0F0F0;
+    width: 120px;
+    height: 48px;
+    border-radius: 62px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.write {
+    background: #000000;
+    color: white;
+    width: 166px;
+    height: 48px;
+    border-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.write button {
+    color: white !important;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+// *************************************
+
+// card *********************
+
+
+.card {
+    border-radius: 20px; 
+    border: 1px solid #0000001A; 
+}
+
+
+.starsArea{
+    justify-content: space-between;
+}
+
+.starsArea .fa-star-half, .starsArea .fa-star{
+    color: #FFC633;
+}
+
+.cardsParent strong {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5; 
+}
