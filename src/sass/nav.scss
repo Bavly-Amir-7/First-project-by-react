@@ -69,6 +69,11 @@
 .icon-container {
     display: flex;
     gap: 10px;
+    padding-left: 40px;
+}
+
+.icon1 , .icon2 {
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .icon {
