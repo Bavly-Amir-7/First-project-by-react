@@ -21,6 +21,8 @@
 .formsInputs {
     display: flex;
     justify-content: space-around;
+    height: 100%;
+    align-items: center;
 }
 
 .formTitle {
@@ -37,7 +39,7 @@
 .textInput {
     width: 349px;
     height: 48px;
-    padding-left: 40px;
+    padding-left: 25%;
     border-radius: 62px;
     box-sizing: border-box;
     margin-bottom: 12px;
@@ -51,11 +53,12 @@
     align-items: center;
 }
 
-.icon {
+.icon7 {
     position: absolute;
-    left: 12px;
-    top: 20%;
+    left: 45px;
+    top: 25%;
     color: #000000;
+    font-size: 20px;
 }
 
 .submitBtn {
@@ -69,6 +72,46 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 21.6px;
+
+
+}
+
+.shop {
+    font-family: "Integral CF Bold";
+    font-size: 33.45px;
+    font-weight: 700;
+    line-height: 40.15px;
+    text-align: left;
+    color: #000000;
+
+}
+
+.titles {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 3px;
+    color: #000000;
+
+}
+
+.pargh {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #00000099;
+}
+
+.ankors {
+    font-family: 'Satoshi', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 19px !important;
+    text-align: left !important;
+    color: #00000099;
+    
 
 
 }
@@ -87,6 +130,7 @@
 .paymentIcons {
     display: flex;
 }
+
 @media (min-width:320px) and (max-width: 770px) {
 
     .formsInputs {
@@ -124,9 +168,8 @@
 
     }
 
-    .icon {
-        left: 15px;
-        top: 45%;
+    .icon7 {
+        top: 50%;
     }
 
     .submitBtn {

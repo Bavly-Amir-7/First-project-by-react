@@ -6,6 +6,8 @@ import masterCard from "../src/images/payments/Mastercard.png"
 import paybal from "../src/images/payments/Paypal.png"
 import apple from "../src/images/payments/ Pay.png"
 import gPay from "../src/images/payments/G Pay.png"
+import shopTitle from "../src/images/SHOP.CO.png"
+
 
 export default function Footer() {
     return (
@@ -24,7 +26,7 @@ export default function Footer() {
                             <br />
                             <div className="formSubmit d-grid">
                                 <div className="inputWrapper">
-                                    <i className="fa-regular fa-envelope icon"></i>
+                                    <i className="fa-regular fa-envelope icon7"></i>
                                     <input type="text" placeholder="Enter your email address" className="textInput" />
                                 </div>
                                 <button className="submitBtn">Subscribe to Newsletter</button>
@@ -37,11 +39,10 @@ export default function Footer() {
                         <MDBContainer className='text-center text-md-start mt-5'>
                             <MDBRow className='mt-3'>
                                 <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-                                    <h6 className='text-uppercase fw-bold mb-4'>
-                                        SHOP.CO
-                                    </h6>
-                                    <p>
-                                        We have clothes that suits your style and which you’re proud to wear. From women to men.
+                                <img className='mb-4' src={shopTitle} alt="Site title" />
+
+                                    <p className='pargh'>
+                                        We have clothes that suits your style and <br /> which you’re proud to wear. From <br />women to men.
                                     </p>
                                     <div>
                                         <a href='' className='me-4 text-reset'>
@@ -61,39 +62,39 @@ export default function Footer() {
                                     </div>
                                 </MDBCol>
 
-                                <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-                                    <h6 className='text-uppercase fw-bold mb-4'>Company</h6>
+                                <MDBCol md="2" lg="2" xl="2" className=' mx-auto mb-4'>
+                                    <h6 className='titles text-uppercase fw-bold mb-4'>Company</h6>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             About
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Features
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Works
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Career
                                         </a>
                                     </p>
                                 </MDBCol>
 
                                 <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-                                    <h6 className='text-uppercase fw-bold mb-4'>Help</h6>
+                                    <h6 className='titles text-uppercase fw-bold mb-4'>Help</h6>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Customer Support
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
 
                                             Delivery Details
 
@@ -102,59 +103,59 @@ export default function Footer() {
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Terms & Conditions
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Privacy Policy
                                         </a>
                                     </p>
                                 </MDBCol>
                                 <MDBCol md="3" lg="3" xl="2" className='mx-auto mb-4'>
-                                    <h6 className='text-uppercase fw-bold mb-4'>FAQ</h6>
+                                    <h6 className='titles text-uppercase fw-bold mb-4'>FAQ</h6>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Account
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Manage Deliveries
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Orders
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Payments
                                         </a>
                                     </p>
                                 </MDBCol>
 
                                 <MDBCol md="4" lg="2" xl="2" className='mx-auto mb-md-0 mb-4'>
-                                    <h6 className='text-uppercase fw-bold mb-4'>Resources</h6>
+                                    <h6 className='titles text-uppercase fw-bold mb-4'>Resources</h6>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Free eBooks
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Development Tutorial
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             How to - Blog
                                         </a>
                                     </p>
                                     <p>
-                                        <a href='#!' className='text-reset'>
+                                        <a href='#!' className='ankors'>
                                             Youtube Playlist
                                         </a>
                                     </p>

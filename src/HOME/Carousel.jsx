@@ -1,66 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import right from "../images/ture.png"
+import right from "../images/ture.png";
 
 const Carousel = () => {
-    const [currentIndex, setCurrentIndex] = useState(1);
-    const [isTransitioning, setIsTransitioning] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState(0);
     const totalCards = 4;
     const cardWidth = 400;
     const transitionDuration = 500;
 
-    const subtitles = ['Sarah M.', 'Alex K.', 'James L.', 'Bavly'];
+    const cardsData = [
+        { title: 'Sarah M.', text: 'I\'m blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I\'ve bought has exceeded my expectations.' },
+        { title: 'Alex K.', text: 'Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.' },
+        { title: 'James L.', text: 'As someone who\'s always on the lookout for unique fashion pieces, I\'m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.' },
+        { title: 'Bavly', text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.' },
+    ];
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsTransitioning(false);
-        }, transitionDuration);
-        return () => clearTimeout(timer);
-    }, [isTransitioning]);
+        const goToNext = () => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % totalCards);
+        };
 
-    const handleNext = () => {
-        if (isTransitioning) return;
-        setIsTransitioning(true);
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalCards);
-    };
-
-    const handlePrev = () => {
-        if (isTransitioning) return;
-        setIsTransitioning(true);
+    const goToPrev = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + totalCards) % totalCards);
     };
-
-    const handleTransitionEnd = () => {
-        if (currentIndex === 0) {
-            setCurrentIndex(totalCards);
-        }
-        if (currentIndex === totalCards + 1) {
-            setCurrentIndex(1);
-        }
-    };
-
+    
     return (
         <div className="carouselParent">
-
-
             <div className="container">
                 <div className="carousel-container">
                     <div className="title-and-buttons">
                         <div className="happyCustomersTitle">OUR HAPPY CUSTOMERS</div>
                         <div className="button-container">
-                            <button
-                                className="carousel-control prev"
-                                onClick={handlePrev}
-                                disabled={isTransitioning}
-                            >
+                            <button className="carousel-control prev" onClick={goToPrev}>
                                 <i className="fa-solid fa-arrow-left"></i>
                             </button>
-                            <button
-                                className="carousel-control next"
-                                onClick={handleNext}
-                                disabled={isTransitioning}
-                            >
+                            <button className="carousel-control next" onClick={goToNext}>
                                 <i className="fa-solid fa-arrow-right"></i>
                             </button>
                         </div>
@@ -69,13 +43,13 @@ const Carousel = () => {
                         <div
                             className="carousel"
                             style={{
-                                transform: `translateX(-${(currentIndex + 1) * cardWidth}px)`,
-                                transition: `transform ${transitionDuration}ms`,
+                                transform: `translateX(-${currentIndex * cardWidth}px)`,
+                                transition: `transform ${transitionDuration}ms ease-in-out`,
+                                width: `${totalCards * cardWidth}px`,
                             }}
-                            onTransitionEnd={handleTransitionEnd}
                         >
-                            {[...Array(totalCards).keys()].map((index) => (
-                                <Card key={`left-${index}`} className="custom-card1" style={{ width: `${cardWidth}px` }}>
+                            {cardsData.map((card, index) => (
+                                <Card key={index} className="custom-card1" style={{ width: `${cardWidth}px` }}>
                                     <Card.Body>
                                         <Card.Title>
                                             <div className="card-title-container">
@@ -87,38 +61,12 @@ const Carousel = () => {
                                             </div>
                                         </Card.Title>
                                         <Card.Subtitle className="mb-2 text-muted nameTitle">
-                                            {subtitles[index % subtitles.length]}
+                                            {card.title}
                                             <img src={right} alt="Icon" className="subtitle-icon" />
                                         </Card.Subtitle>
                                         <Card.Text>
-                                            Some quick example text to build on the card title and make up the
-                                            bulk of the card's content.
+                                            {card.text}
                                         </Card.Text>
-
-                                    </Card.Body>
-                                </Card>
-                            ))}
-                            {[...Array(totalCards).keys()].map((index) => (
-                                <Card key={`right-${index}`} className="custom-card1" style={{ width: `${cardWidth}px` }}>
-                                    <Card.Body>
-                                        <Card.Title>
-                                            <div className="card-title-container">
-                                                <div className="stars">
-                                                    {[...Array(5)].map((_, starIndex) => (
-                                                        <i key={starIndex} className="fa-solid fa-star"></i>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        </Card.Title>
-                                        <Card.Subtitle className="mb-2 text-muted">
-                                            {subtitles[index % subtitles.length]}
-                                            <img src={right} alt="Icon" className="subtitle-icon" />
-                                        </Card.Subtitle>
-                                        <Card.Text>
-                                            Some quick example text to build on the card title and make up the
-                                            bulk of the card's content.
-                                        </Card.Text>
-
                                     </Card.Body>
                                 </Card>
                             ))}

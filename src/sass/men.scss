@@ -352,6 +352,31 @@
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .reviews {
+        width: 100%;
+        align-items: center;
+    }
+
+    .allReviews {
+        font-size: 20px;
+    }
+
+    .write {
+
+        width: 113px;
+
+    }
+
+    .latest {
+        display: none !important;
+    }
+
+    .write button {
+        font-size: 12px;
+    }
+}
+
 // *************************************
 
 // card *********************

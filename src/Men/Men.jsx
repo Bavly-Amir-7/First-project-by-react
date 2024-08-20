@@ -129,7 +129,7 @@ export default function Men() {
                 <i className="fa-solid fa-sliders"></i>
               </div>
 
-              <div className='latest d-flex'>Latest <i className="fa-solid fa-chevron-down"></i></div>
+              <div className='latest'>Latest <i className="fa-solid fa-chevron-down"></i></div>
 
               <div className='write'>
                 <button>Write a Review</button>

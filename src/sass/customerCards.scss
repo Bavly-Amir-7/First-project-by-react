@@ -1,7 +1,4 @@
-
-//! customers cards ********* 
-
-.carouselParent{
+.carouselParent {
     padding-bottom: 80px;
 }
 
@@ -53,11 +50,10 @@ button {
     margin-left: 8px;
 }
 
-.carousel-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+.card-body {
+    padding-top: 0px !important;
 }
+
 
 .carousel-wrapper {
     display: flex;
@@ -70,12 +66,14 @@ button {
 }
 
 .custom-card1 {
-    width: 400px !important;
-    height: 239.58px !important;
     margin: 0 10px !important;
     border: 1px solid rgba(0, 0, 0, 0.1) !important;
     border-radius: 20px !important;
     padding: 28px 32px !important;
+}
+
+.stars {
+    margin-top: 0px !important;
 }
 
 .stars i {
@@ -92,7 +90,16 @@ button {
     padding-left: 6.25px;
 }
 
+.card-text {
+    font-size: 16px;
+    line-height: 22px;
+}
+
 @media (max-width: 768px) {
+    .card-body {
+        padding-top: 0px !important;
+    }
+
     .happyCustomersTitle {
         font-family: "Integral CF Bold";
         font-size: 32px;
@@ -104,11 +111,8 @@ button {
 
     .custom-card1 {
         width: 358px !important;
-        height: (186.19px) !important;
-        margin: 0 10px !important;
         border: 1px solid rgba(0, 0, 0, 0.1) !important;
         border-radius: 20px !important;
-        margin-top: 24px;
     }
 
     .button-container {
@@ -117,7 +121,15 @@ button {
         margin-top: 98px;
     }
 
+    .card-text {
+        font-size: 14px;
+    }
 
+    .nameTitle {
+        font-size: 16px;
+    }
+
+    .stars i {
+        font-size: 14px;
+    }
 }
-
-//! customers cards ********* 
