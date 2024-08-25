@@ -5,25 +5,27 @@ import right from "../images/ture.png";
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const totalCards = 4;
-    const cardWidth = 400;
-    const transitionDuration = 500;
-
     const cardsData = [
         { title: 'Sarah M.', text: 'I\'m blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I\'ve bought has exceeded my expectations.' },
         { title: 'Alex K.', text: 'Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.' },
         { title: 'James L.', text: 'As someone who\'s always on the lookout for unique fashion pieces, I\'m thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.' },
         { title: 'Bavly', text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.' },
+        { title: 'Bavly2', text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.' },
+        { title: 'Bavly3', text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.' },
     ];
+    const totalCards = cardsData.length;
+    const cardWidth = 400;
+    const transitionDuration = 500;
 
-        const goToNext = () => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % totalCards);
-        };
+
+    const goToNext = () => {
+        (totalCards - currentIndex) > 3 ? setCurrentIndex((prevIndex) => (prevIndex + 1) % totalCards) : setCurrentIndex(0)
+    };
 
     const goToPrev = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + totalCards) % totalCards);
     };
-    
+
     return (
         <div className="carouselParent">
             <div className="container">
@@ -45,7 +47,7 @@ const Carousel = () => {
                             style={{
                                 transform: `translateX(-${currentIndex * cardWidth}px)`,
                                 transition: `transform ${transitionDuration}ms ease-in-out`,
-                                width: `${totalCards * cardWidth}px`,
+                                // width: `${totalCards * cardWidth}px`,
                             }}
                         >
                             {cardsData.map((card, index) => (

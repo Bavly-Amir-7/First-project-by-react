@@ -13,6 +13,8 @@ import Header from './HOME/Header';
 import Footer from './Footer';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import Men from './Men/Men';
+import ResponsiveDrawer from '../src/Casual'
+
 
 
 
@@ -22,15 +24,19 @@ function App() {
   return (
     <>
       <CustomNav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/brands" element={<Cards />} />
-          <Route path="/cards" element={<Cards />} />
-          <Route path="/*" element={<ErrorPage />} />
-          <Route path="men" element={<Men />} />
-        </Routes>
-        <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/brands" element={<Cards />} />
+        <Route path="/cards" element={<Cards />} />
+        <Route path="/*" element={<ErrorPage />} />
+        <Route path="men" element={<Men />} />
+        <Route path="/casual" element={<ResponsiveDrawer />} />
+      </Routes>
+      <Footer />
+ 
+
+
     </>
   );
 }

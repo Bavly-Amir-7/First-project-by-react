@@ -26,7 +26,7 @@ function CustomNav() {
                   <NavDropdown.Divider />
                   <NavDropdown.Item as={Link} to="/somethingelse">Something else here</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link as={Link} to="/">On Sale</Nav.Link>
+                <Nav.Link as={Link} to="/casual">On Sale</Nav.Link>
                 <Nav.Link as={Link} to="/about">New Arrivals</Nav.Link>
                 <Nav.Link as={Link} to="/brands">Brands</Nav.Link>
               </Nav>
