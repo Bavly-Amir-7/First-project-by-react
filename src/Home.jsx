@@ -1,12 +1,12 @@
 // Home.jsx
 import React from 'react';
-import Carousel from './HOME/Carousel';
-import Header from './HOME/Header';
-import Brands from './HOME/Brands';
-import NewArrivals from './HOME/NewArrivals';
-import TopSelling from './HOME/TopSelling';
-import DressStyles from './HOME/DressStyles';
-import Men from './Men/Men';
+import Carousel from './components/home/Carousel';
+import Header from './components/home/Header';
+import Brands from './components/home/Brands';
+import NewArrivals from './components/home/NewArrivals';
+import TopSelling from './components/home/TopSelling';
+import DressStyles from './components/home/DressStyles';
+import Men from './components/Men/Men';
 
 function Home() {
   return (

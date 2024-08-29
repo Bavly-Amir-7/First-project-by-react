@@ -4,17 +4,17 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import CustomNav from './CustomNav';
+import CustomNav from './components/layout/CustomNav';
 import Home from './Home';
 import About from './About';
 import Cards from './Cards';
 import ErrorPage from './test/ErrorPage';
-import Header from './HOME/Header';
-import Footer from './Footer';
+// import Header from './components/HOME/Header';
+import Footer from './components/layout/Footer';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import Men from './Men/Men';
-import ResponsiveDrawer from '../src/Casual'
-import Brands from './BrandsCart';
+import Men from './components/Men/Men';
+import Brands from './components/BrandsCart';
+import ResponsiveDrawer from './components/Casual';
 
 
 
@@ -32,7 +32,7 @@ function App() {
         <Route path="/cards" element={<Cards />} />
         <Route path="/*" element={<ErrorPage />} />
         <Route path="men" element={<Men />} />
-        <Route path="/casual" element={<ResponsiveDrawer />} />
+        <Route path="/casual" element={<ResponsiveDrawer/>} />
       </Routes>
       <Footer />
  

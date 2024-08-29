@@ -1,0 +1,42 @@
+h1 {
+    font-family: "Integral CF Bold";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: #000000 !important;
+}
+
+.cardsCart {
+    top: 276px;
+    left: 100px;
+    padding: 20px 24px 20px 24px;
+    gap: 24px;
+    border-radius: 20px;
+    border: 1px;
+    opacity: 0px;
+}
+
+
+.cartParent{
+    width: Fixed (715px)px;
+height: Hug (508px)px;
+top: 276px;
+left: 100px;
+padding: 20px 24px 20px 24px;
+gap: 24px;
+border-radius: 20px;
+border: 1px ;
+opacity: 0px;
+border: 1px solid #0000001A
+}
+
+.cartParent img {
+    width: 125px;
+}
+
+
+.cartChildes{
+    margin-top: 6.5px;
+
+}
