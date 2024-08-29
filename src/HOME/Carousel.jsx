@@ -23,8 +23,9 @@ const Carousel = () => {
     };
 
     const goToPrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + totalCards) % totalCards);
+        (currentIndex > 0) ? setCurrentIndex((prevIndex) => (prevIndex - 1 + totalCards) % totalCards) : setCurrentIndex(totalCards - 1);
     };
+    
 
     return (
         <div className="carouselParent">

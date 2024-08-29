@@ -8,7 +8,7 @@
     display: none !important;
 }
 
-.hideBtn{
+.hideBtn {
     display: none !important;
 }
 
@@ -36,13 +36,76 @@ body {
 }
 
 .drawer {
-    padding: 16px;
-    // height: 100%;
-    transition: transform 0.3s ease;
+    margin-top: 24px;
+    width: Fixed (295px)px;
+    top: 204px;
+    padding: 20px 24px 20px 24px;
+    gap: 24px;
+    border-radius: 20px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0000001A;
 }
 
 .drawer.visible {
     transform: translateX(0);
+}
+
+.filterTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterTitle img {
+    width: 20.25px;
+    height: 18.75px;
+}
+
+.clotheTitle {
+    font-family: 'Satoshi', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22.5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: #00000099;
+    align-items: center;
+}
+
+.sliderRange {
+    color: #000000 !important;
+}
+
+.priceTitle {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.priceTitle img {
+    transform: rotate(-90deg);
+}
+
+.theTitles {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #000000 !important;
+}
+
+.price {
+    font-family: 'Satoshi', sans-serif;
+    width: 100%;
+    display: flex;
+    gap: 115px;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
 }
 
 .content {
@@ -62,32 +125,99 @@ body {
     width: 100%;
 }
 
+.color-options {
+    margin-top: 24px;
+}
+
 .color-options label {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     margin-right: 10px;
+    position: relative;
 }
 
 .color-options input {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+    width: 37px;
+    height: 37px;
+    border: 2px solid #00000033;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    transition: background-color 0.3s ease;
 }
 
-.size-options,
-.style-options {
+.color-options input:checked::before {
+    content: "✓";
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.size-options {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 20px;
 }
 
-.filter-btn {
-    background-color: #000;
-    color: white;
-    padding: 10px;
-    border: none;
+
+.sizeBtn {
+    background: #F0F0F0;
+    color: #000000;
+    width: 96px;
+    height: 48px;
+    border-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sizeBtn button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sizeBtn:hover button {
+    color: #FFFFFF !important;
+}
+
+.sizeBtn:hover {
+    background-color: #000000 !important;
+}
+
+.applyBtn {
+    margin-top: 24px;
     width: 100%;
 }
+
+.applyFilter {
+    width: 100%;
+    height: Fixed (48px)px;
+    padding: 16px 54px 16px 54px;
+    border-radius: 62px;
+    opacity: 0px;
+    background: #000000 !important;
+    color: #FFFFFF !important;
+
+}
+
 
 .product-grid {
     display: grid;
@@ -134,17 +264,13 @@ body {
     }
 
     .drawer {
-        width: 100%;
         transform: translateX(-100%);
         position: absolute;
         z-index: 1000;
         top: 100px;
         bottom: 0;
-        //   height: 100%;
+        height: 200vh;
         background: #FFFFFF;
-        inset-area: center;
-
-
     }
 
     .drawer.visible {
@@ -158,7 +284,8 @@ body {
     .hide-content {
         display: none;
     }
-    .hideBtn{
+
+    .hideBtn {
         display: block !important;
     }
 }
