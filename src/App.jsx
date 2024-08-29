@@ -14,6 +14,7 @@ import Footer from './Footer';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import Men from './Men/Men';
 import ResponsiveDrawer from '../src/Casual'
+import Brands from './BrandsCart';
 
 
 
@@ -27,7 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/brands" element={<Cards />} />
+        <Route path="/brands" element={<Brands/>} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/*" element={<ErrorPage />} />
         <Route path="men" element={<Men />} />

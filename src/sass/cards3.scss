@@ -6,8 +6,8 @@
     width: 100%;
     box-sizing: border-box;
     padding-top: 10px;
-    min-height: 600px; /* حد أدنى للارتفاع لضمان بقاء الأزرار أسفل الصفحة */
-    position: relative; /* لجعل أزرار الترقيم دائمًا في أسفل الصفحة */
+    min-height: 600px; 
+    position: relative; 
   }
   
   @media (max-width: 1200px) {
@@ -37,8 +37,10 @@
     box-shadow: none;
     border: none;
     box-sizing: border-box;
+    border-radius: 20px; 
+    overflow: hidden; 
   }
-  
+
   .custom-card-img-container3 {
     width: 100%;
     height: 200px;

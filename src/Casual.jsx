@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import arrow from "../src/images/men/Vector.png";
 import filter from "../src/images/casual/filter.png";
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-import Cards3 from './test/Cards3'
+import Cards3 from './test/Cards3';
 
 function valuetext(value) {
     return `${value}°C`;
@@ -29,25 +29,19 @@ function ResponsiveDrawer() {
                 <div className="shopGate d-flex mt-5">
                     <div className='gateImgs'>Home <img src={arrow} alt="arrow" /> </div>
                     <div className='gateTshirts'>Casual</div>
+
                 </div>
-                <Button
-                    className="filter-toggle-btn showBtn"
-                    onClick={toggleFilters}
-                >
-                    {showFilters ? "Hide Filters" : "Show Filters"}
-                </Button>
+
 
                 <Row>
                     <Col md={3} className={`drawer-container ${showFilters ? "show-filters" : ""}`}>
                         <aside className={`drawer ${showFilters ? "visible" : ""}`}>
-                            <Button className="filter-toggle-btn hideBtn" onClick={toggleFilters}>
-                                {showFilters ? "Hide Filters" : "Show Filters"}
-                            </Button>
                             <div className="filter">
                                 <div className="filterTitle">
                                     <div className='theTitles'>Filters</div>
-                                    <img src={filter} alt="filterIcon" />
-                                </div>
+                                    <div className="filter-icon" onClick={toggleFilters}>
+                                        <img src={filter} alt="filterIcon" style={{ cursor: 'pointer' }} />
+                                    </div>                                </div>
                                 <hr />
 
                                 <div className="clothes">
@@ -75,11 +69,9 @@ function ResponsiveDrawer() {
 
                                 <hr />
 
-
                                 <div className="priceTitle">
                                     <div className='theTitles'>Price</div>
                                     <img src={arrow} alt="arrow" />
-
                                 </div>
                                 <Box sx={{ width: { xs: '100%', sm: 250 } }}>
                                     <Slider className='sliderRange'
@@ -96,7 +88,6 @@ function ResponsiveDrawer() {
                                 <div className='price'>
                                     <div>${priceRange[0]}</div>
                                     <div>${priceRange[1]}</div>
-
                                 </div>
                             </div>
 
@@ -153,13 +144,11 @@ function ResponsiveDrawer() {
                                 </div>
                             </div>
 
-
                             <hr />
 
                             <div className="priceTitle">
                                 <div className='theTitles'>Dress Style</div>
                                 <img src={arrow} alt="arrow" />
-
                             </div>
 
                             <div className="clothes">
@@ -183,13 +172,20 @@ function ResponsiveDrawer() {
 
                             <div className="applyBtn">
                                 <button className='applyFilter'>Apply Filter</button>
-                            </div>                        </aside>
+                            </div>
+                        </aside>
                     </Col>
 
                     <Col md={9} className={`content ${showFilters ? "hide-content" : ""}`}>
-                        <h2>Casual</h2>
-                        < Cards3 />
+                        <div className="contentTitle d-flex w-100">
+                            <h2>Casual</h2>
+                            <div className="filter-icon1" onClick={toggleFilters}>
+                                <img src={filter} alt="filterIcon" style={{ cursor: 'pointer' }} />
+                            </div>
 
+
+                        </div>
+                        < Cards3 />
                     </Col>
                 </Row>
             </Container>
@@ -198,31 +194,3 @@ function ResponsiveDrawer() {
 }
 
 export default ResponsiveDrawer;
-
-// <div className="product-grid">
-//     <div className="product-card">
-//         <img src="" alt="product" />
-//         <h2>Gradient Graphic T-shirt</h2>
-//         <p>$145</p>
-//         <p>3.5/5</p>
-//     </div>
-//     <div className="product-card">
-//         <img src="" alt="product" />
-//         <h3>Gradient Graphic T-shirt</h3>
-//         <p>$145</p>
-//         <p>3.5/5</p>
-//     </div>
-//     <div className="product-card">
-//         <img src="" alt="product" />
-//         <h3>Gradient Graphic T-shirt</h3>
-//         <p>$145</p>
-//         <p>3.5/5</p>
-//     </div>
-//     <div className="product-card">
-//         <img src="" alt="product" />
-//         <h3>Gradient Graphic T-shirt</h3>
-//         <p>$145</p>
-//         <p>3.5/5</p>
-//     </div>
-//     {/* Repeat product cards as needed */}
-// </div>
