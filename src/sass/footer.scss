@@ -135,6 +135,7 @@
 
     .formsInputs {
         display: grid !important;
+        height: min-content;
     }
 
     .footerForm {
@@ -148,6 +149,7 @@
     .formSubmit {
         width: 100%;
         justify-items: center;
+        padding-bottom: 28px;
     }
 
     .formTitle {

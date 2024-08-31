@@ -170,7 +170,7 @@ function ResponsiveDrawer() {
                                 </div>
                             </div>
 
-                            <div className="applyBtn">
+                            <div className="applyBtn2">
                                 <button className='applyFilter'>Apply Filter</button>
                             </div>
                         </aside>
