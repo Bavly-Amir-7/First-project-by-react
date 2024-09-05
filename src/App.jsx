@@ -5,10 +5,9 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import CustomNav from './components/layout/CustomNav';
-import Home from './Home';
-import About from './About';
-import Cards from './Cards';
-import ErrorPage from './test/ErrorPage';
+import Home from './components/Home';
+import Cards from './components/cardsComponents/Cards';
+import ErrorPage from './components/errorPage/ErrorPage';
 // import Header from './components/HOME/Header';
 import Footer from './components/layout/Footer';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
@@ -27,7 +26,6 @@ function App() {
       <CustomNav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/brands" element={<Brands/>} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/*" element={<ErrorPage />} />

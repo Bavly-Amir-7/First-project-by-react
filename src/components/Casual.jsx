@@ -5,7 +5,7 @@ import arrow from "../assets/images/men/Vector.png";
 import filter from "../assets/images/casual/filter.png";
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-import Cards3 from '../test/Cards3';
+import Cards3 from './cardsComponents/Cards3';
 
 function valuetext(value) {
     return `${value}°C`;
@@ -194,3 +194,5 @@ function ResponsiveDrawer() {
 }
 
 export default ResponsiveDrawer;
+
+

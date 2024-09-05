@@ -1,6 +1,6 @@
 import React from 'react'
 import ResponsiveDrawer from '../Casual'
-import Cards2 from '../../test/Cards2'
+import Cards2 from '../cardsComponents/Cards2'
 
 export default function TopSelling() {
     return (

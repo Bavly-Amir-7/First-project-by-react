@@ -21,7 +21,6 @@ export default function Cards3() {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = products.slice(indexOfFirstItem, indexOfLastItem);
 
-  // الانتقال إلى الصفحة الجديدة
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (

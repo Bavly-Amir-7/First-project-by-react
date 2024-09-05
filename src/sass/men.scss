@@ -142,11 +142,13 @@
     font-weight: 700;
 }
 
-.orginal {
+.original {
     font-family: 'Satoshi', sans-serif;
     color: #0000004D;
     size: 32px;
     font-weight: 700;
+    align-content: center !important;
+
 }
 
 .percentage {
@@ -154,6 +156,7 @@
     width: 72px;
     text-align: center;
     border-radius: 62px;
+    align-content: center;
 }
 
 .discountPercentage {

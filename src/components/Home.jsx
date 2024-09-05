@@ -1,12 +1,12 @@
 // Home.jsx
 import React from 'react';
-import Carousel from './components/home/Carousel';
-import Header from './components/home/Header';
-import Brands from './components/home/Brands';
-import NewArrivals from './components/home/NewArrivals';
-import TopSelling from './components/home/TopSelling';
-import DressStyles from './components/home/DressStyles';
-import Men from './components/Men/Men';
+import Carousel from './home/Carousel';
+import Header from './home/Header';
+import Brands from './home/Brands';
+import NewArrivals from './home/NewArrivals';
+import TopSelling from './home/TopSelling';
+import DressStyles from './home/DressStyles';
+import Men from './Men/Men';
 
 function Home() {
   return (
@@ -44,3 +44,5 @@ function Home() {
 }
 
 export default Home;
+
+
