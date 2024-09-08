@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import shopTitle from "../../assets/images/imgs/SHOP.CO.png";
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 function CustomNav() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle('dark-mode', !darkMode);
+  };
+
   return (
     <>
       <div className="navHeader text-center">
@@ -49,6 +57,9 @@ function CustomNav() {
               <Link to="/profile" className="icon2">
                 <i className="fa fa-user" aria-hidden="true"></i>
               </Link>
+              {/* <button className="theme-toggle themeMode" onClick={toggleDarkMode}>
+                {darkMode ? <FaSun style={{ color: '#232323' }} /> : <FaMoon style={{ color: '#666666' }} />}
+              </button> */}
             </div>
           </div>
         </Container>
