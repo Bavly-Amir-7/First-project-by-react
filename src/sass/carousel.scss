@@ -28,7 +28,7 @@ button {
 }
 
 .nameTitle {
-    color: red($color: #000000);
+    color: #000000;
 }
 
 .carousel-control {
@@ -54,7 +54,6 @@ button {
     padding-top: 0px !important;
 }
 
-
 .carousel-wrapper {
     display: flex;
     overflow: hidden;
@@ -74,8 +73,7 @@ button {
 
 .stars {
     margin-top: 0px !important;
-    color: #FFC633 ;
-
+    color: #FFC633;
 }
 
 .stars i {
@@ -97,29 +95,19 @@ button {
 }
 
 @media (max-width: 768px) {
-    .card-body {
-        padding-top: 0px !important;
-    }
-
     .happyCustomersTitle {
-        font-family: "Integral CF Bold";
-        font-size: 32px;
-        line-height: 36px;
-        margin-bottom: 40px;
-        width: 286px;
-        height: 72px;
+        font-size: 28px;
+        margin-bottom: 20px;
     }
 
     .custom-card1 {
-        width: 358px !important;
-        border: 1px solid rgba(0, 0, 0, 0.1) !important;
-        border-radius: 20px !important;
+        width: 100%;
+        margin-bottom: 20px !important;
     }
 
     .button-container {
-        display: flex;
         justify-content: center;
-        margin-top: 98px;
+        margin-top: 40px;
     }
 
     .card-text {
@@ -127,10 +115,10 @@ button {
     }
 
     .nameTitle {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .stars i {
-        font-size: 14px;
+        font-size: 16px;
     }
 }

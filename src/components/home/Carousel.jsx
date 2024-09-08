@@ -14,20 +14,26 @@ const Carousel = () => {
         { title: 'Bavly3', text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.' },
     ];
     const totalCards = cardsData.length;
-    const cardWidth = 400;
-    const transitionDuration = 500;
-
+    const cardWidth = 350;
+    const transitionDuration = 400;
 
     const goToNext = () => {
-        (totalCards - currentIndex) > 3 ? setCurrentIndex((prevIndex) => (prevIndex + 1) % totalCards) : setCurrentIndex(0)
+        const isMobile = window.innerWidth <= 768; // Check if the screen width is for mobile
+        if (isMobile) {
+            (totalCards - currentIndex) > 1 ? setCurrentIndex((prevIndex) => (prevIndex + 1) % totalCards) : setCurrentIndex(0);
+        } else {
+            (totalCards - currentIndex) > 3 ? setCurrentIndex((prevIndex) => (prevIndex + 1) % totalCards) : setCurrentIndex(0);
+        }
     };
 
     const goToPrev = () => {
-        // (currentIndex > 0) && setCurrentIndex((prevIndex) => (prevIndex - 1 + totalCards) % totalCards) ;
-        (currentIndex > 0) ? setCurrentIndex((prevIndex) => (prevIndex - 1 + totalCards) % totalCards) : setCurrentIndex(totalCards - 3);
-
+        const isMobile = window.innerWidth <= 768; // Check if the screen width is for mobile
+        if (isMobile) {
+            (currentIndex > 0) ? setCurrentIndex((prevIndex) => (prevIndex - 1 + totalCards) % totalCards) : setCurrentIndex(totalCards - 1);
+        } else {
+            (currentIndex > 0) ? setCurrentIndex((prevIndex) => (prevIndex - 1 + totalCards) % totalCards) : setCurrentIndex(totalCards - 3);
+        }
     };
-    
 
     return (
         <div className="carouselParent">
@@ -50,7 +56,6 @@ const Carousel = () => {
                             style={{
                                 transform: `translateX(-${currentIndex * cardWidth}px)`,
                                 transition: `transform ${transitionDuration}ms ease-in-out`,
-                                // width: `${totalCards * cardWidth}px`,
                             }}
                         >
                             {cardsData.map((card, index) => (
