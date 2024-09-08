@@ -18,7 +18,7 @@ const Carousel = () => {
     const transitionDuration = 400;
 
     const goToNext = () => {
-        const isMobile = window.innerWidth <= 768; // Check if the screen width is for mobile
+        const isMobile = window.innerWidth <= 768; 
         if (isMobile) {
             (totalCards - currentIndex) > 1 ? setCurrentIndex((prevIndex) => (prevIndex + 1) % totalCards) : setCurrentIndex(0);
         } else {
@@ -27,7 +27,7 @@ const Carousel = () => {
     };
 
     const goToPrev = () => {
-        const isMobile = window.innerWidth <= 768; // Check if the screen width is for mobile
+        const isMobile = window.innerWidth <= 768; 
         if (isMobile) {
             (currentIndex > 0) ? setCurrentIndex((prevIndex) => (prevIndex - 1 + totalCards) % totalCards) : setCurrentIndex(totalCards - 1);
         } else {
