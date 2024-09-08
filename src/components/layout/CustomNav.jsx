@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import shopTitle from "../../assets/images/imgs/SHOP.CO.png";
 
@@ -7,8 +7,8 @@ function CustomNav() {
   return (
     <>
       <div className="navHeader text-center">
-        Sign up and get 20% off to your first order. 
-        <a className='text-white navSign' href="#first_name">Sign up for now</a> 
+        Sign up and get 20% off to your first order.
+        <a className='text-white navSign' href="#first_name">Sign up for now</a>
       </div>
 
       <Navbar expand="lg" className="navParent">
@@ -41,17 +41,15 @@ function CustomNav() {
                   />
                 </div>
               </Form>
-
-           
             </Navbar.Collapse>
             <div className="icon-container">
-                <a href="/cart" className="icon1">
-                  <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-                </a>
-                <a href="/profile" className="icon2">
-                  <i className="fa fa-user" aria-hidden="true"></i>
-                </a>
-              </div>
+              <Link to="/brands" className="icon1">
+                <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+              </Link>
+              <Link to="/profile" className="icon2">
+                <i className="fa fa-user" aria-hidden="true"></i>
+              </Link>
+            </div>
           </div>
         </Container>
       </Navbar>

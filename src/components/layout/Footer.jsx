@@ -13,6 +13,7 @@ export default function Footer() {
     return (
 
         <>
+        
 
             <MDBFooter className='text-center text-lg-start text-muted footerParent'>
 
