@@ -6,15 +6,15 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 
 function CustomNav() {
   const [darkMode, setDarkMode] = useState(false);
-  const [modalShow, setModalShow] = useState(false); // State for modal visibility
+  const [modalShow, setModalShow] = useState(false); 
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.body.classList.toggle('dark-mode', !darkMode);
   };
 
-  const handleShow = () => setModalShow(true); // Show modal
-  const handleClose = () => setModalShow(false); // Close modal
+  const handleShow = () => setModalShow(true); 
+  const handleClose = () => setModalShow(false); 
 
   return (
     <>
