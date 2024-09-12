@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Cards() {
   const [products, setProducts] = useState([]);
@@ -28,13 +29,15 @@ export default function Cards() {
       <div className="custom-card-container">
         {products.slice(0, showMore ? products.length : 4).map(product => (
           <div key={product.id} className="custom-card">
-            <div className="custom-card-img-container">
-              <img src={product.image} alt={product.title} className="custom-card-img" />
-            </div>
-            <div className="custom-card-body">
-              <h5 className="custom-card-title">{truncateTitle(product.title)}</h5>
-              <p className="custom-card-price">${product.price}</p>
-            </div>
+            <Link to={`/product/${product.id}`}> 
+              <div className="custom-card-img-container">
+                <img src={product.image} alt={product.title} className="custom-card-img" />
+              </div>
+              <div className="custom-card-body">
+                <h5 className="custom-card-title">{truncateTitle(product.title)}</h5>
+                <p className="custom-card-price">${product.price}</p>
+              </div>
+            </Link>
           </div>
         ))}
       </div>

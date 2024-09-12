@@ -13,6 +13,7 @@ import Men from './components/Men/Men';
 import Brands from './components/BrandsCart';
 import ResponsiveDrawer from './components/Casual';
 import Cards3 from './components/cardsComponents/Cards3';
+import ProductPage from './components/cardsComponents/ProductPage';  // صفحة المنتج
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/brands" element={<Brands />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/cards3" element={<Cards3 />} />
+        <Route path="/product/:id" element={<ProductPage />} /> 
         <Route path="/*" element={<ErrorPage />} />
         <Route path="/men" element={<Men />} />
         <Route path="/casual" element={<ResponsiveDrawer />} />
