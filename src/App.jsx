@@ -12,6 +12,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import Men from './components/Men/Men';
 import Brands from './components/BrandsCart';
 import ResponsiveDrawer from './components/Casual';
+import Cards3 from './components/cardsComponents/Cards3';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/brands" element={<Brands />} />
         <Route path="/cards" element={<Cards />} />
+        <Route path="/cards3" element={<Cards3 />} />
         <Route path="/*" element={<ErrorPage />} />
         <Route path="/men" element={<Men />} />
         <Route path="/casual" element={<ResponsiveDrawer />} />

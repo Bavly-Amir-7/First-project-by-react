@@ -110,6 +110,12 @@
     color: #007bff;
 }
 
+.iconSearch {
+    display: none !important;
+}
+
+
+
 .navbar-toggler-icon {
     display: inline-block;
     width: 1.5em;
@@ -121,13 +127,19 @@
     background-size: 100%;
 }
 
-.navParent button:hover{
+.navParent button:hover {
     background-color: transparent !important;
 }
 
+
 // Responsive styles
 @media (max-width: 768px) {
- 
+
+.navStyle{
+    display: contents !important;
+
+}
+
     .navHeader {
         width: 100%;
         height: auto;
@@ -135,6 +147,10 @@
         font-size: 12px;
         line-height: 20px;
         text-align: center;
+    }
+
+    .inputWrapper {
+        display: none !important;
     }
 
     .icon {
@@ -148,6 +164,15 @@
 
     .navQuery {
         max-height: 0% !important;
+    }
+
+    .iconSearch {
+        display: inline !important;
+    }
+
+    .icon-container {
+      
+        padding-left: 0;
     }
 }
 
