@@ -135,6 +135,10 @@
 // Responsive styles
 @media (max-width: 768px) {
 
+    .siteTitle{
+        width: 64% !important;
+    }
+
 .navStyle{
     display: contents !important;
 
@@ -178,6 +182,6 @@
 
 @media (max-width: 1440px) {
     .nav-styles {
-        font-size: 14px !important;
+        font-size: 13px !important;
     }
 }

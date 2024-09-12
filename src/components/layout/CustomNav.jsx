@@ -26,7 +26,7 @@ function CustomNav() {
       <Navbar expand="lg" className="navParent">
         <Container>
           <Navbar.Toggle aria-controls="navbarScroll" />
-          <Link to="/">
+          <Link to="/" className='siteTitle'>
             <img className='webTitle' src={shopTitle} alt="Site title" />
           </Link>
           <div className='navStyle '>
@@ -55,6 +55,7 @@ function CustomNav() {
                 </div>
               </Form>
             </Navbar.Collapse>
+          </div>
             <div className="icon-container">
               <a href="#" className="icon1" onClick={handleShow}> {/* Open modal on click */}
                 <i className="fa-solid fa-magnifying-glass iconSearch"></i>
@@ -69,7 +70,6 @@ function CustomNav() {
                 {darkMode ? <FaSun style={{ color: '#232323' }} /> : <FaMoon style={{ color: '#666666' }} />}
               </button> */}
             </div>
-          </div>
         </Container>
       </Navbar>
 
