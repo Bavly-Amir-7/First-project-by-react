@@ -6,7 +6,7 @@ import img2 from "../assets/images/cart/image 9.svg";
 import img3 from "../assets/images/cart/image 10.svg";
 
 export default function Brands() {
-  const [counts, setCounts] = useState([0, 0, 0]);
+  const [counts, setCounts] = useState([1, 1, 1]);
 
   const prices = [145, 180, 240];
 
@@ -21,7 +21,7 @@ export default function Brands() {
   const decrement = (index) => {
     setCounts((prevCounts) => {
       const newCounts = [...prevCounts];
-      newCounts[index] = newCounts[index] > 0 ? newCounts[index] - 1 : 0;
+      newCounts[index] = newCounts[index] > 1 ? newCounts[index] - 1 : 1;
       return newCounts;
     });
   };
@@ -29,7 +29,7 @@ export default function Brands() {
   const resetCount = (index) => {
     setCounts((prevCounts) => {
       const newCounts = [...prevCounts];
-      newCounts[index] = 0;
+      newCounts[index] = 1;
       return newCounts;
     });
   };
