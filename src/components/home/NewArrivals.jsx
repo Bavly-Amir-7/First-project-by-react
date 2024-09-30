@@ -10,7 +10,7 @@ export default function NewArrivals() {
             <div className='arrivals'>
                 NEW ARRIVALS
             </div>
-            <Cards/>
-                    </div>
+            <Cards />
+        </div>
     )
 }

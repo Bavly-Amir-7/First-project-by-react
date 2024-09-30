@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Cards3() {
   const [products, setProducts] = useState([]);
@@ -16,7 +17,6 @@ export default function Cards3() {
     return title.length > maxLength ? title.substring(0, maxLength) + '...' : title;
   };
 
-  // حساب الكروت التي ستظهر في الصفحة الحالية
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = products.slice(indexOfFirstItem, indexOfLastItem);
@@ -27,17 +27,18 @@ export default function Cards3() {
     <div className="custom-card-container3">
       {currentItems.map(product => (
         <div key={product.id} className="custom-card3">
-          <div className="custom-card-img-container3">
-            <img src={product.image} alt={product.title} className="custom-card-img3" />
-          </div>
-          <div className="custom-card-body3">
-            <h5 className="custom-card-title3">{truncateTitle(product.title)}</h5>
-            <p className="custom-card-price3">${product.price}</p>
-          </div>
+          <Link to={`/product/${product.id}`}>
+            <div className="custom-card-img-container3">
+              <img src={product.image} alt={product.title} className="custom-card-img3" />
+            </div>
+            <div className="custom-card-body3">
+              <h5 className="custom-card-title3">{truncateTitle(product.title)}</h5>
+              <p className="custom-card-price3">${product.price}</p>
+            </div>
+          </Link>
         </div>
       ))}
 
-      {/* Pagination Buttons */}
       <div className="pagination">
         {Array.from({ length: Math.ceil(products.length / itemsPerPage) }, (_, index) => (
           <button
